@@ -1,0 +1,13 @@
+Code:
+import random
+while(True):
+    Temp= random.randint(1, 100)
+    Humidity= random.randint(1,100)
+    if(Temp>50 or Humidity>50):
+        print("Fire is Detected")
+        break
+    else:
+        print("Normal Condition, Temperature:",Temp," Humidity:",Humidity)
+        
+IDLE compiled code with output:
+https://drive.google.com/file/d/1DWxJmfw0XLZ79a_lGAQQMHBuY_mHYFoD/view?usp=sharing
