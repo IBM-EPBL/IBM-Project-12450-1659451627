@@ -1,0 +1,12 @@
+CODE:
+import random
+while(True):
+    a=random.randint(10,100)
+    b=random.randint(10,100)
+    if(a>50 and b>100):
+        print("High Temperature and humidity of:",a,b,"%","Alarm is ON")
+    elif(a<50 and b<100):
+        print("High Temperature and humidity of:", a, b, "%", "Alarm is OFF")
+        break
+IDLE EXECUTION & OUTPUT:
+https://drive.google.com/file/d/1uA3R8_QgI0vhE2Tl8FQVMys4uUawsZQS/view?usp=drivesdk
