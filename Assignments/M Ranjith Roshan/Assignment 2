@@ -4,7 +4,7 @@ a=True
 while(a):
     t=random.randint(10,300)
     h=random.randint(10,300)
-    if(a>100 and b>150):
+    if(t>100 and h>150):
         print("Alert!!!! High Temperature and humidity is Detected:",t,h,"%","Alarm is ON")
         a=False
     else:
