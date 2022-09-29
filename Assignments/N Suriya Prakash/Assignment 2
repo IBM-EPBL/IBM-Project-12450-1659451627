@@ -1,0 +1,15 @@
+CODE:
+import random
+a=True
+while(a):
+    temperature=random.randint(10,300)
+    humidity=random.randint(10,300)
+    if(temperature>100 and humidity>150):
+        print("Alert!!!! High Temperature and humidity is Detected:",temperature,humidity,"%","Alarm is ON")
+        a=False
+    else:
+        print("Normal Temperature:", temperature, "Normal Humidity:", humidity, "%", "Alarm is OFF")
+        a=False
+       
+IDLE Compiled Code With Output:
+https://drive.google.com/file/d/1OIsFW4o_gQumVzdJ1qMbIkSxvqpwzlNJ/view?usp=sharing
