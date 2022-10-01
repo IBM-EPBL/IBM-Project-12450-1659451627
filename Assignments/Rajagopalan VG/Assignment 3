@@ -1,0 +1,23 @@
+#GPIO Pins, Traffic light 1, Pin 21 - RED LED, Pin 22 - AMBER LED, Pin 23 - GREEN LED
+#GPIO Pins, Traffic light 2, Pin 24 - RED LED, Pin 25 - AMBER LED, Pin 26 - GREEN LED
+from gpiozero import TrafficLights #Importing TrafficLight function from gpiozero inbuilt module
+Light_1 = TrafficLights(21,22,23) #Passing GPIO pins as parameters in (RED,AMBER,GREEN) format
+Light_2 = TrafficLights(24,25,26)
+Light_1.red.on()  #Initialising Red Lights everywhere
+Light_2.red.on()
+while(True): #Infinite executing loop for continuous process
+	Light_1.amber.on() #Traffic Light 1 is turned to amber and waits for 5 seconds, then to green and waits for 60 seconds
+	sleep(5)
+	Light_1.green.on()
+	sleep(60)
+	Light_1.amber.on()
+	sleep(5)
+	Light_1.red.on()  #Then Traffic Light 1 is turned red and the process is repeated for Traffic Light 2
+	Light_2.amber.on()
+	sleep(5)
+	Light_2.green.on()
+	sleep(60)
+	Light_2.amber.on()
+	sleep(5)
+	Light_2.red.on() #Then the Traffic Light 2 is turned red and the loop is executed from first
+	
