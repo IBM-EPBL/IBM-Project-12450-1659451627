@@ -1,0 +1,22 @@
+
+
+from gpiozero import TrafficLights
+Traffic_A = TrafficLights(24,25,26) 
+Traffic_B = TrafficLights(21,22,23)
+Traffic_A.red.on()  
+Traffic_B.red.on()
+while(True):
+	Traffic_A.amber.on()
+	sleep(5)
+	Traffic_B.green.on()
+	sleep(90)
+	Traffic_A.amber.on()
+	sleep(5)
+	Traffic_A.red.on()  
+	Traffic_B.amber.on() 
+	sleep(5)
+	Traffic_B.green.on()
+	sleep(90)
+	Traffic_B.amber.on()
+	sleep(5)
+	Traffic_B.red.on()
