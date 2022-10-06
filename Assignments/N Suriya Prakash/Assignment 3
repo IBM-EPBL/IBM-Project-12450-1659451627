@@ -1,5 +1,3 @@
-
-
 from gpiozero import TrafficLights
 Traffic_A = TrafficLights(24,25,26) 
 Traffic_B = TrafficLights(21,22,23)
